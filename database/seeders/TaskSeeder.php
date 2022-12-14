@@ -2,12 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Client;
 use App\Models\Task;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ClientSeeder extends Seeder
+class TaskSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,8 +15,6 @@ class ClientSeeder extends Seeder
      */
     public function run()
     {
-        Client::factory(10)
-            ->has(Task::factory(5))
-            ->create();
+        Task::factory(50)->create();
     }
 }
