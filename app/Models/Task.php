@@ -11,6 +11,8 @@ class Task extends Model
 {
     use HasFactory;
 
+    protected $guarded = ['id'];
+
     public function client(): BelongsTo
     {
         return $this->belongsTo(Client::class);
