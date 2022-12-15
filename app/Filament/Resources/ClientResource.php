@@ -66,5 +66,10 @@ class ClientResource extends Resource
             'create' => Pages\CreateClient::route('/create'),
             'edit' => Pages\EditClient::route('/{record}/edit'),
         ];
-    }    
+    }
+
+    public static function getNavigationIcon(): string
+    {
+        return 'heroicon-o-users';
+    }
 }
