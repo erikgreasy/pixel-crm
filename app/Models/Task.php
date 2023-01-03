@@ -17,4 +17,9 @@ class Task extends Model
     {
         return $this->belongsTo(Client::class);
     }
+
+    public function order(): BelongsTo
+    {
+        return $this->belongsTo(Order::class);
+    }
 }
